@@ -1,0 +1,84 @@
+.calculator{
+    width:50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align:center;
+    margin:20px;
+    margin:auto;
+    padding:40px;
+    background-color: aquamarine;
+}
+.inputtext{
+    width:40%;
+    padding:10px 20px;
+    font-size: 25px;
+    border:none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: right;
+}
+.answertext{
+    width:40%;
+    padding:10px 20px;
+    /* border-radius: 5px; */
+    font-size: 25px;
+    border:none;
+    text-align: right;
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+.key{
+    margin:30px
+}
+.btn1{
+    padding:20px 40px;
+    border:none;
+    border-radius:5px;
+    font-size: 22px;
+}
+.btnzero{
+    padding:20px 80px;
+    border:none;
+    border-radius:5px;
+    font-size: 22px;
+    margin-right: 5px;
+    
+}
+.equal{
+    padding:20px 80px;
+    border:none;
+    border-radius:5px;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.cebtn1{
+    padding:20px 32px;
+    border:none;
+    border-radius:5px;
+    font-size: 22px;
+    background-color:red;
+    
+}
+.bracket{
+    padding:20px 32px;
+    border:none;
+    border-radius:5px;
+    font-size: 22px;
+}
+.clear{
+    padding:20px 22px;
+    border:none;
+    border-radius:5px;
+    font-size: 22px;
+    color:red;
+}
+.ope{
+    margin-left: 65px;
+}
+div.key .btn1:hover{
+    opacity: 0.5;
+    /* background-color: aquamarine; */
+}
+div.ope .btn1:hover{
+    opacity: 0.5;
+    /* background-color: aquamarine; */
+}
