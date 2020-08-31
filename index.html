@@ -10,7 +10,7 @@
 <body>
    
     <div class="calculator">
-        <input type="text" class="inputtext" id="input" name="number" value="" placeholder="0"><br>
+        <input type="text" class="inputtext" id="input" name="number" value="" onkeypress="return onlyNumberKey(event)" placeholder="0"><br>
         <input type="text" class="answertext" id="ans" name="number">
         <div class="key">
             <button class="cebtn1" id="ce" value="ce" onclick="clearFunction()">AC</button>

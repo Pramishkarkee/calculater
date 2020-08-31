@@ -72,7 +72,7 @@ var i=0
 function brackets(){
 var input=document.getElementById("input")
 console.log("i",i)
- if(i ==0){
+ if(i ==0 || input==""){
     input.value += "("
     i+=1
  }
@@ -95,3 +95,9 @@ trackEnter.addEventListener("keydown",function(event){
         document.getElementById('ans').value="=" + answer
     }
 })
+function onlyNumberKey(evt){
+    var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+    if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57 ) ) 
+        return false; 
+    return true; 
+}
