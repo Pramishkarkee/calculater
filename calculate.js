@@ -1,5 +1,5 @@
 function numberFunction(number){
-    var input=document.getElementById("input")
+    let input=document.getElementById("input")
     switch(number){
         case 1:
             input.value+="1"
@@ -37,7 +37,7 @@ function numberFunction(number){
 }
 
 function operand(ope){
-    var input=document.getElementById("input")
+    let input=document.getElementById("input")
     switch(ope){
         case '+':
             input.value+="+"
@@ -59,8 +59,8 @@ function clearFunction(){
 }
  
 function cutFunction(){
-    var input_val=document.getElementById("input")
-    var x=input_val.value
+    let input_val=document.getElementById("input")
+    let x=input_val.value
     if(x.length>0){
         x=x.substring(0,x.length-1)
         input_val.value=x
@@ -68,35 +68,44 @@ function cutFunction(){
 
 }
 
-var i=0
+let j=0
 function brackets(){
-var input=document.getElementById("input")
-console.log("i",i)
- if(i ==0 || input==""){
+let input=document.getElementById("input")
+
+ let inputArr=Array.from(input.value).reverse()
+ for(i=0;i<inputArr.length;i++){
+     if(inputArr[i]==")"){
+        input.value += "("
+        break
+     }
+     else if(inputArr[i]=="("){
+        input.value += ")"
+        break
+     }
+ }
+
+ if(j==0){
     input.value += "("
-    i+=1
  }
- else if(i==1){
-    input.value+= ")"
-    i-=1
- }
+ j=j+1
+ console.log("right",i,inputArr)
 }
 function myFunctionEql(){
-    var input_val=document.getElementById("input").value
-    var answer=Math.floor(+eval(input_val))
+    let input_val=document.getElementById("input").value
+    let answer=Math.floor(+eval(input_val))
     document.getElementById('ans').value="=" + answer
 }
 
-var trackEnter=document.getElementById("input")
+let trackEnter=document.getElementById("input")
 trackEnter.addEventListener("keydown",function(event){
     if(event.keyCode==13){
-        var input_val=document.getElementById("input").value
-        var answer=Math.floor(+eval(input_val))
+        let input_val=document.getElementById("input").value
+        let answer=Math.floor(+eval(input_val))
         document.getElementById('ans').value="=" + answer
     }
 })
 function onlyNumberKey(evt){
-    var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+    let ASCIICode = (evt.which) ? evt.which : evt.keyCode 
     if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57 ) ) 
         return false; 
     return true; 
