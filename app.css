@@ -1,8 +1,28 @@
+.left{
+    top:0;
+    width:50%;
+    /* background-color: aquamarine; */
+    position:fixed;
+    height:100%;
+    margin-left: 10%;
+}
+.right{
+    top:0;
+    width:20%;
+    /* background-color:rgba(200, 80, 50, 0.8); */
+    position:fixed;
+    right: 0;
+    height:100%;
+    margin-right:30% ;
+}
+/* .app{
+    border-style:solid
+} */
 .calculator{
     width:50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     text-align:center;
-    margin:20px;
+    /* margin:20px; */
     margin:auto;
     padding:40px;
     background-color:rgba(220, 40, 100, 0.8);
@@ -96,4 +116,7 @@ div.key .btn1:hover{
 div.ope .btn1:hover{
     opacity: 0.5;
     /* background-color: aquamarine; */
+}
+ul{
+    list-style-type: none;
 }

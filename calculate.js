@@ -90,10 +90,20 @@ let input=document.getElementById("input")
  j=j+1
  console.log("right",i,inputArr)
 }
+let arrayHistory=[]
 function myFunctionEql(){
     let input_val=document.getElementById("input").value
+    let oneHistry=input_val
     let answer=Math.floor(+eval(input_val))
     document.getElementById('ans').value="=" + answer
+    let histry=oneHistry+" = "+answer
+    arrayHistory.push(histry)
+    console.log(arrayHistory)
+    var app=document.querySelector('#app');
+app.innerHTML = '<ul>' + arrayHistory.map((arr)=>{
+    return '<li>'+ arr +'</li>'
+    console.log(arr)
+}).join('')+'</ul>'
 }
 
 let trackEnter=document.getElementById("input")
